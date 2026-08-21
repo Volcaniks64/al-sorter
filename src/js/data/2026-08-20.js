@@ -1,0 +1,9278 @@
+dataSetVersion = "2026-08-20";
+
+dataSet[dataSetVersion] = {};
+
+dataSet[dataSetVersion].options = [
+    {
+        name: "Roster Options",
+        key: "roster",
+        tooltip: "Choose which types of characters should be included.",
+        checked: false,
+        sub: [
+            { name: "Include Retrofits", tooltip: "Include Retrofits. The original version will still be included as well, so you will end up with e.g. Belfast and Belfast (Retrofit)", key: "retrofit" },
+            { name: "Include Alts", tooltip: "Include Alt version such as Muse, Loli, II etc.", key: "alt" },
+            { name: "Include Unreleased", tooltip: "Includes currently unreleased ships such as Enterprise META or Takao META", key: "unreleased" },
+            { name: "Include Sirens", tooltip: "Includes Sirens, Arbiters, TB and the like. Be aware that there WILL be spoilers included!", key: "siren" },
+            { name: "Include Humans", tooltip: "Includes humans from the story such as Dr. Aoste and Dr. Anzeel. Be aware that there WILL be spoilers included!", key: "human" },
+            { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if 'Include Sirens' isn't turned on", key: "chibionly" }
+        ]
+    },
+
+    {
+        name: "Filter by Faction",
+        key: "faction",
+        tooltip: "Choose which factions to include.",
+        checked: false,
+        sub: [
+            { name: "Eagle Union", key: "eagle_union" },
+            { name: "Royal Navy", key: "royal_navy" },
+            { name: "Sakura Empire", key: "sakura_empire" },
+            { name: "Iron Blood", key: "iron_blood" },
+            { name: "Dragon Empery", key: "dragon_empery" },
+            { name: "Sardegna Empire", key: "sardegna_empire" },
+            { name: "Northern Parliament", key: "northern_parliament" },
+            { name: "Iris Libre", key: "iris_libre" },
+            { name: "Vichya Dominion", key: "vichya_dominion" },
+            { name: "Tulipa", key: "tulipa" },
+            { name: "Liga de Pedrería", key: "liga_de_pedreria" },
+            { name: "META", key: "meta" },
+            { name: "Tempesta", key: "tempesta" },
+            { name: "Universal", key: "universal" },
+            { name: "Collaboration", key: "collaboration" }
+        ]
+    },
+
+    {
+        name: "Filter by Rarity",
+        key: "rarity",
+        tooltip: "Choose which rarities to include.",
+        checked: false,
+        sub: [
+            { name: "Common", key: "common" },
+            { name: "Rare", key: "rare" },
+            { name: "Elite", key: "elite" },
+            { name: "Super Rare", key: "super_rare" },
+            { name: "Ultra Rare", key: "ultra_rare" },
+            { name: "Priority", key: "priority" },
+            { name: "Decisive", key: "decisive" }
+        ]
+    },
+
+    {
+        name: "Filter by Ship Type",
+        key: "type",
+        tooltip: "Choose which ship types to include.",
+        checked: false,
+        sub: [
+            { name: "DD", key: "dd", tooltip: "Destroyer" },
+            { name: "DDG", key: "ddg", tooltip: "Guided Missile Destroyer" },
+            { name: "AE", key: "ae", tooltip: "Ammunition Ship" },
+            { name: "CL", key: "cl", tooltip: "Light Cruiser" },
+            { name: "CA", key: "ca", tooltip: "Heavy Cruiser" },
+            { name: "CB", key: "cb", tooltip: "Large Cruiser" },
+            { name: "BM", key: "bm", tooltip: "Monitor" },
+            { name: "BB", key: "bb", tooltip: "Battleship" },
+            { name: "BC", key: "bc", tooltip: "Battlecruiser" },
+            { name: "BBV", key: "bbv", tooltip: "Aviation Battleship" },
+            { name: "CV", key: "cv", tooltip: "Aircraft Carrier" },
+            { name: "CVL", key: "cvl", tooltip: "Light Aircraft Carrier" },
+            { name: "SS", key: "ss", tooltip: "Submarine" },
+            { name: "SSV", key: "ssv", tooltip: "Submarine Carrier" },
+            { name: "AR", key: "ar", tooltip: "Repair Ship" },
+            { name: "IXs", key: "ixs", tooltip: "Sailing Frigate (Submarine)" },
+            { name: "IXv", key: "ixv", tooltip: "Sailing Frigate (Vanguard)" },
+            { name: "IXm", key: "ixm", tooltip: "Sailing Frigate (Main)" },
+        ]
+    }
+];
+
+dataSet[dataSetVersion].characterData = [
+    
+    // =========================
+    // Eagle Union
+    // =========================
+
+    // USS Unreleased
+
+    {
+        name: "Bon Homme Richard",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+
+    // USS Retrofit
+
+    {
+        name: "Eldridge (Retrofit)",
+        img: "eldridgekai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Essex (Retrofit)",
+        img: "essexkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            retrofit: true
+        }
+    },
+    {
+        name: "San Diego (Retrofit)",
+        img: "san_diegokai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Charles Ausburne (Retrofit)",
+        img: "charles_ausburnekai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Colorado (Retrofit)",
+        img: "coloradokai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Helena (Retrofit)",
+        img: "helenakai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Independence (Retrofit)",
+        img: "independencekai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Laffey (Retrofit)",
+        img: "laffeykai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Maryland (Retrofit)",
+        img: "marylandkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Maury (Retrofit)",
+        img: "maurykai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Nicholas (Retrofit)",
+        img: "nicholaskai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Saratoga (Retrofit)",
+        img: "saratogakai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            retrofit: true
+        }
+    },
+    {
+        name: "West Virginia (Retrofit)",
+        img: "west_virginiakai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+        {
+        name: "Bailey (Retrofit)",
+        img: "baileykai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Hammann (Retrofit)",
+        img: "hammannkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Juneau (Retrofit)",
+        img: "juneaukai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Long Island (Retrofit)",
+        img: "long_islandkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Portland (Retrofit)",
+        img: "portlandkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Sims (Retrofit)",
+        img: "simskai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+        {
+        name: "Bogue (Retrofit)",
+        img: "boguekai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Cassin (Retrofit)",
+        img: "cassinkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Downes (Retrofit)",
+        img: "downeskai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Langley (Retrofit)",
+        img: "langleykai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+        {
+        name: "Nevada (Retrofit)",
+        img: "nevadakai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Oklahoma (Retrofit)",
+        img: "oklahomakai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+            {
+        name: "Ranger (Retrofit)",
+        img: "rangerkai.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+
+    // USS Decisive
+
+    {
+        name: "Kearsarge",
+        img: "kearsarge.png",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["decisive"],
+            type: ["bbv"]
+        }
+    },
+
+    // USS Priority
+
+    {
+        name: "Anchorage",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["priority"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Georgia",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Halford",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["priority"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Kansas",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Seattle",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+
+    // USS Ultra Rare
+
+    {
+        name: "Guam",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["cb"]
+        }
+    },
+    {
+        name: "Laffey II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["dd"],
+            alt: true
+        }
+    },
+    {
+        name: "Lexington II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "New Jersey",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "William D. Porter",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Yorktown II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["ultra_rare"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+
+    // USS Super Rare
+
+    {
+        name: "Alabama",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Albacore",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Allen M. Sumner",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Archerfish",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Baltimore",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Bennington",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Bremerton",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Bristol",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Cavalla",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Collett",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Constellation",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Cowpens",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Eldridge",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Enterprise",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Essex",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Fargo",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Flasher",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Franklin",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Hornet II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Houston II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Indiana",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Ingraham",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Intrepid",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Massachusetts",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Minneapolis",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Montpelier",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "New Orleans",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "North Carolina",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Northampton II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"],
+            alt: true
+        }
+    },
+    {
+        name: "Pittsburgh",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Reno",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "San Diego",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "San Francisco",
+
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Santa Fe",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Shangri-La",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "South Dakota",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Ticonderoga",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Vicksburg",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Washington",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["super_rare"],
+            type: ["BB"]
+        }
+    },
+
+    // USS Elite
+
+    {
+        name: "Albacore µ",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ss"],
+            alt: true
+        }
+    },
+    {
+        name: "Arizona",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Astoria",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Baltimore µ",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"],
+            alt: true
+        }
+    },
+    {
+        name: "Bataan",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Bell",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Biloxi",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Birmingham",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Bluegill",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Boise",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Boise µ",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Charles Ausburne",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Clarence K. Bronson",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Clevelad",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Cleveland",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Cleveland µ",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Colorado",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Columbia",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Cooper",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Dace",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Denver",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Hammann II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"],
+            alt: true
+        }
+    },
+    {
+        name: "Harrison",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Helena",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Herring",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Hornet",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Houston",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Independence",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Indianapolis",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "John Rodgers",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Laffey",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Langley II",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"],
+            alt: true
+        }
+    },
+    {
+        name: "Lena",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Lexington",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Li'l Sandy",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Little Anchorage",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"],
+            alt: true
+        }
+    },
+    {
+        name: "Little Enterprise",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Louisville",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Maryland",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Maury",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Miller",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Morrison",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Mullany",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Nautilus",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Nicholas",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Pasadena",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Princeton",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Quincy",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "San Jacinto",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Saratoga",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "St. Louis",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Stephen Potter",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Vestal",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ar"]
+        }
+    },
+    {
+        name: "Vincennes",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "West Virginia",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Wichita",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Yorktown",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+
+    // USS Rare
+
+    {
+        name: "Atlanta",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Aylwin",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Bache",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Bailey",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Benson",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Brooklyn",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Bush",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "California",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Casablanca",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Chicago",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Concord",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Dewey",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Fletcher",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Gridley",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Halsey Powell",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Hammann",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Hazelwood",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Hobby",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Honolulu",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Jenkins",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Juneau",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Kalk",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Kimberly",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Long Island",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Marblehead",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Memphis",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Northampton",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Pennsylvania",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Phoenix",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Portland",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Radford",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "San Juan",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Sims",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Smalley",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Stanly",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Tennessee",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Thatcher",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Wasp",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["rare"],
+            type: ["cv"]
+        }
+    },
+
+    // USS Common
+
+    {
+        name: "Aulick",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Bogue",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Cassin",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Craven",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Downes",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Foote",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Langley",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "McCall",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Nevada",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Oklahoma",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Omaha",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Pensacola",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Raleigh",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Ranger",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Richmond",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Salt Lake City",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Spence",
+        opts: {
+            faction: ["eagle_union"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+
+    // =========================
+    // Royal Navy
+    // =========================
+
+    // HMS Retrofit
+
+    {
+        name: "Belfast (Retrofit)",
+        img: "belfastkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Warspite (Retrofit)",
+        img: "warspitekai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Ark Royal (Retrofit)",
+        img: "ark_royalkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Exeter (Retrofit)",
+        img: "exeterkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Glowworm (Retrofit)",
+        img: "glowwormkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+        {
+        name: "Javelin (Retrofit)",
+        img: "javelinkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "London (Retrofit)",
+        img: "londonkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Nelson (Retrofit)",
+        img: "nelsonkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Unicorn (Retrofit)",
+        img: "unicornkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "York (Retrofit)",
+        img: "yorkkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Acasta (Retrofit)",
+        img: "acastakai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Achilles (Retrofit)",
+        img: "achilleskai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Ajax (Retrofit)",
+        img: "ajaxkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Amazon (Retrofit)",
+        img: "amazonkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Ardent (Retrofit)",
+        img: "ardentkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Curacoa (Retrofit)",
+        img: "curacoakai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Curlew (Retrofit)",
+        img: "curlewkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Fortune (Retrofit)",
+        img: "fortunekai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Newcastle (Retrofit)",
+        img: "newcastlekai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Shropshire (Retrofit)",
+        img: "shropshirekai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Suffolk (Retrofit)",
+        img: "suffolkkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Comet (Retrofit)",
+        img: "cometkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Crescent (Retrofit)",
+        img: "crescentkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Cygnet (Retrofit)",
+        img: "cygnetkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Foxhound (Retrofit)",
+        img: "foxhoundkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Hermes (Retrofit)",
+        img: "hermeskai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    },
+    {
+        name: "Leander (Retrofit)",
+        img: "leanderkai.png",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    },
+
+    // HMS Decisive
+
+    {
+        name: "Drake",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["decisive"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Plymouth",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["decisive"],
+            type: ["cl"]
+        }
+    },
+
+    // HMS Priority
+
+    {
+        name: "Cheshire",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["priority"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Duncan",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["priority"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Monarch",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Neptune",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+
+    // HMS Ultra Rare
+
+    {
+        name: "Implacable",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Lion",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Trafalgar",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Vanguard",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+
+    // HMS Super Rare
+
+    {
+        name: "Albion",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Belfast",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Centaur",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Charybdis",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Cleopatra",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Dido",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Dido µ",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Duke of York",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Formidable",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Formidable µ",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Hermione",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Hood",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Howe",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Illustrious",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Illustrious µ",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Indomitable",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Janus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Jervis",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "King George V",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Nubian",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Perseus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Prince of Wales",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Royal Oak",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Scylla",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Sirius",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Superb",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Surrey",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Swiftsure",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Theseus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Victorious",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Warspite",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+
+    // HMS Elite
+
+    {
+        name: "Abercrombie",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bm"]
+        }
+    },
+    {
+        name: "Argus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Ark Royal",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Aurora",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Bellona",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Black Prince",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Chaser",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Devonshire",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Dorsetshire",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Eagle",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Edinburgh",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Enterprise (Royal Navy)",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Eerebus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bm"]
+        }
+    },
+    {
+        name: "Eskimo",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Exeter",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Gallant",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Glorious",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Gloucester",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Glowworm",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Grenville",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Griffin",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Hardy",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Hero",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Icarus",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Javelin",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Little Bel",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"],
+            alt: true
+        }
+    },
+    {
+        name: "Little Cheshire",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"], 
+            alt: true
+        }
+    },
+    {
+        name: "Little Formidable",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Little Illustrious",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cv"],
+            alt: true
+        }
+    },
+    {
+        name: "Little Renown",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bc"],
+            alt: true
+        }
+    },
+    {
+        name: "Liverpool",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "London",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Manchester",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Matchless",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Musketeer",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Nelson",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Penelope",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Queen Elizabeth",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Renown",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Revenge",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Rodney",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Sheffield",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Sheffield µ",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Terror",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bm"]
+        }
+    },
+    {
+        name: "Trinidad",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Unicorn",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+        name: "Valiant",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Vampire",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "York",
+        opts: {
+            faction: ["royal_navy"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+
+    // HMS Rare
+
+    {
+            name: "Acasta",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Achilles",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Ajax",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Amazon",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ardent",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Arethusa",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Curacoa",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Curlew",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Echo",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fiji",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Fortune",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Galatea",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Glasgow",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hunter",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Jamaica",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Jersey",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Juno",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Jupiter",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kent",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Newcastle",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Norfolk",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Repulse",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Shropshire",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Southampton",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Suffolk",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Sussex",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+
+    // HMS Common
+
+        {
+            name: "Beagle",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Bulldog",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Comet",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Crescent",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Cygnet",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Foxhound",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hermes",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Leander",
+            opts: {
+                faction: ["royal_navy"],
+                rarity: ["common"],
+                type: ["cl"]
+            }
+        },
+
+    // =========================
+    // Sakura Empire
+    // =========================
+    
+    // IJN Retrofit
+
+    {
+        name: "Yuudachi (Retrofit)",
+        img: "yuudachikai.png",
+        opts: {
+            faction: ["sakura_empire"],
+            rarity: ["ultra_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    }, 
+        {
+            name: "Ayanami (Retrofit)",
+            img: "ayanamikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Hiryuu (Retrofit)",
+            img: "hiryuukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Jintsuu (Retrofit)",
+            img: "jintsuukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kasumi (Retrofit)",
+            img: "kasumikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kinu (Retrofit)",
+            img: "kinukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Mogami (Retrofit)",
+            img: "mogamikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Shigure (Retrofit)",
+            img: "shigurekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Souryuu (Retrofit)",
+            img: "souryuukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Yuubari (Retrofit)",
+            img: "yuubarikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+            {
+            name: "Ariake (Retrofit)",
+            img: "ariakekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Fusou (Retrofit)",
+            img: "fusoukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bbv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Hamakaze (Retrofit)",
+            img: "hamakazekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Hatsuharu (Retrofit)",
+            img: "hatsuharukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Hatsushimo (Retrofit)",
+            img: "hatsushimokai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Hyuuga (Retrofit)",
+            img: "hyuugakai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bbv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Ise (Retrofit)",
+            img: "isekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bbv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Isuzu (Retrofit)",
+            img: "isuzukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kagerou (Retrofit)",
+            img: "kageroukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kamikaze (Retrofit)",
+            img: "kamikazekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Matsukaze (Retrofit)",
+            img: "matsukazekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Nachi (Retrofit)",
+            img: "nachikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Sendai (Retrofit)",
+            img: "sendaikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Shiratsuyu (Retrofit)",
+            img: "shiratsuyukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Shouhou (Retrofit)",
+            img: "shouhoukai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cvl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Tanikaze (Retrofit)",
+            img: "tanikazekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Yamashiro (Retrofit)",
+            img: "yamashirokai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bbv"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Yuugure (Retrofit)",
+            img: "yuugurekai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+            {
+            name: "Abukuma (Retrofit)",
+            img: "abukumakai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cl"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Furutaka (Retrofit)",
+            img: "furutakakai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["ca"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kako (Retrofit)",
+            img: "kakokai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["ca"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Kisaragi (Retrofit)",
+            img: "kisaragikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Mutsuki (Retrofit)",
+            img: "mutsukikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+    {
+            name: "Shiranui (Retrofit)",
+            img: "shiranuikai.png",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"],
+                retrofit: true
+            }
+        },
+
+    // IJN Decisive
+
+        {
+            name: "Azuma",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["decisive"],
+                type: ["cb"]
+            }
+        },
+    {
+            name: "Hakuryuu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["decisive"],
+                type: ["cv"]
+            }
+        },
+
+    // IJN Priority
+
+        {
+            name: "Daisen",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Ibuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Izumo",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Kitakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Shimanto",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Takahashi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["priority"],
+                type: ["cl"]
+            }
+        },
+
+    // IJN Ultra Rare
+
+        {
+            name: "Amagi(CV)",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Hakuhou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "I-404",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["ssv"]
+            }
+        },
+    {
+            name: "Musashi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Shimakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Shinano",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Unzen",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["ultra_rare"],
+                type: ["ca"]
+            }
+        },
+
+    // IJN Super Rare
+
+        {
+            name: "Akagi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Akagi µ",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Akashi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ar"]
+            }
+        },
+    {
+            name: "Amagi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Asama",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Atago",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Chikuma",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Choukai",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Fujinami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hatsuzuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "I-13",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ssv"]
+            }
+        },
+    {
+            name: "I-168",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "I-19",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Kaga",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Kaga(BB)",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"],
+                alt: true
+            }
+        },
+    {
+            name: "Katsuragi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Kawakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kazagumo",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kii",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Maya",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Mikasa",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Nagato",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Noshiro",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Noshiro µ",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"],
+                alt: true
+            }
+        },
+    {
+            name: "Oumi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Owari",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Ryuuhou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Sakawa",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Shoukaku",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Suruga",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Suzutsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Taihou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Taihou µ",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Takao",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Tosa",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Unryuu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Wakatsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Watarase",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Yukikaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yuudachi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Zuihou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Zuikaku",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+
+    // IJN Elite
+
+        {
+            name: "Agano",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Akagi-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Amagi-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"],
+                alt: true
+            }
+        },
+    {
+            name: "Asanagi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ashigara",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Ayanami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ayase",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Chitose",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Chiyoda",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Fubuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Haguro",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Hanazuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Haruna",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Harutsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hibiki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hiei",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Hiei-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"],
+                alt: true
+            }
+        },
+    {
+            name: "Hiryuu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Houshou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "I-25",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "I-26",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "I-56",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "I-58",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Jintsuu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kashino",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ae"]
+            }
+        },
+    {
+            name: "Kasumi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kinu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kirishima",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Kizu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kongou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Kongou µ",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bc"],
+                alt: true
+            }
+        },
+    {
+            name: "Kumano",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Makinami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Mikuma",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Minase",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Miyuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Mogami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Musashi-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bb"],
+                alt: true
+            }
+        },
+    {
+            name: "Mutsu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Naganami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Natori",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Nayoro",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Niizuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Nowaki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ryuujou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Shigure",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Shinano-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Shirayuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Souryuu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Suzunami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Suzuya",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Taekaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Taihou-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+    {
+            name: "Umikaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Unzen-chan",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Uranami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yamakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yoizuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yura",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Yuubari",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+
+    // IJN Rare
+
+        {
+            name: "Akatsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Arashio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ariake",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Asashio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fumizuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fusou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Hamakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hatakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hatsuharu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hatsushimo",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hiyou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Hyuuga",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Ikazuchi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Inazuma",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ise",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Isokaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Isuzu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Junyou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Kagerou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kamikaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kiyonami",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kuroshio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Matsukaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Michishio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Myoukou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Nachi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Nagatsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Naka",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Oite",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ooshio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Oyashio",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Sendai",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Shiratsuyu",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Shouhou",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Tanikaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Urakaze",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Wakaba",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yamashiro",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Yuugure",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["rare"],
+                type: ["dd"]
+            }
+        },
+
+    // IJN Common
+
+        {
+            name: "Abukuma",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Aoba",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Furutaka",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Kako",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Kinugasa",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Kisaragi",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Mikazuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Minazuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Mutsuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Nagara",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Shiranui",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Uzuki",
+            opts: {
+                faction: ["sakura_empire"],
+                rarity: ["common"],
+                type: ["dd"]
+            }
+        },
+
+    // =========================
+    // Iron Blood
+    // =========================
+
+    // KMS Retrofit
+
+    {
+        name: "Admiral Hipper (Retrofit)",
+        img: "admiral_hipperkai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["super_rare"],
+            type: ["ca"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Z1 (Retrofit)",
+        img: "z1kai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Z23 (Retrofit)",
+        img: "z23kai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Leipzig (Retrofit)",
+        img: "leipzigkai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["elite"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Karlsruhe (Retrofit)",
+        img: "karlsruhekai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Köln",
+        img: "kölnkai.png",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+
+    // KMS Decisive
+
+    {
+        name: "Friedrich der Große",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["decisive"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Hindenburg",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["decisive"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Max Immelmann",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["decisive"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Mecklenburg",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["decisive"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Ägir",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["decisive"],
+            type: ["cb"]
+        }
+    },
+
+    // KMS Priority
+
+    {
+        name: "August von Parseval",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Felix Schultz",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Mainz",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Odin",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Prinz Rupprecht",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Roon",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["priority"],
+            type: ["ca"]
+        }
+    },
+
+    // KMS Ultra Rare
+
+    {
+        name: "Bismarck Zwei",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["bb"],
+            alt: true
+        }
+    },
+    {
+        name: "Fritz Rumey",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Götz von Berlichingen",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "U-2501",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Ulrich von Hutten",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Z52",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["ultra_rare"],
+            type: ["dd"]
+        }
+    },
+
+    // KMS Super Rare
+
+        {
+            name: "Admiral Zenker",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Alvitr",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Bismarck",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Blücher",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Brünhilde",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Duisburg",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Emden",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Friedrich Carl",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Graf Zeppelin",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Lützow",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Magdeburg",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Otto von Alvensleben",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Peter Strasser",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Prinz Adalbert",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Prinz Eugen",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Prinz Eugen µ",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Prinz Heinrich",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Prinz Moritz",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Regensburg",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Roon µ",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Seydlitz",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Tirpitz",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "U-101",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-37",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-47",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-552",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-81",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-96",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Z46",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z47",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+
+    // KMS KMS Elite
+    
+        {
+            name: "Admiral Graf Spee",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Admiral Hipper",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Admiral Hipper µ",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Deutschland",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Elbe",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Elbing",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Gneisenau",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Jade",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Little Friedrich",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["bb"],
+                alt: true
+            }
+        },
+    {
+            name: "Little Prinz Eugen",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Little Spee",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"],
+                alt: true
+            }
+        },
+    {
+            name: "Little Ägir",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cb"],
+                alt: true
+            }
+        },
+    {
+            name: "Nürnberg",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Scharnhorst",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Thüringen",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "U-110",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-1206",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-31",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-410",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-522",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-556",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-557",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "U-73",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Weser",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Yorck",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Z1",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z11",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z13",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z14",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z15",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z16",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z2",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z23",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z24",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z25",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z26",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z28",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z35",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z36",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z43",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Z9",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Zeppy",
+            opts: {
+                faction: ["iron_blood"],
+                rarity: ["elite"],
+                type: ["cv"],
+                alt: true
+            }
+        },
+
+    // KMS Rare
+
+    {
+        name: "Leipzig",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Z18",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Z19",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+
+    // KMS Common
+
+    {
+        name: "Karlsruhe",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Köln",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Königsberg",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["common"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Z20",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Z21",
+        opts: {
+            faction: ["iron_blood"],
+            rarity: ["common"],
+            type: ["dd"]
+        }
+    },
+
+    // =========================
+    // Dragon Empery
+    // =========================
+
+    // ROC/PRAN Retrofit
+
+    {
+        name: "An Shan (Retrofit)",
+        img: "an_shankai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ddg"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Chang Chun (Retrofit)",
+        img: "chang_chunkai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ddg"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Chao Ho (Retrofit)",
+        img: "chao_hokai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Chen Hai (Retrofit)",
+        img: "chen_haikai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Fu Shun (Retrofit)",
+        img: "fu_shunkai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ddg"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Hwah Jah (Retrofit)",
+        img: "hwah_jahkai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cvl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Ning Hai (Retrofit)",
+        img: "ning_haikai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Ping Hai (Retrofit)",
+        img: "ping_haikai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Tai Yuan (Retrofit)",
+        img: "tai_yuankai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ddg"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Yat Sen (Retrofit)",
+        img: "yat_senkai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Ying Swei (Retrofit)",
+        img: "ying_sweikai.png",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+
+    // ROC/PRAN Decisive
+
+    // ROC/PRAN Priority
+
+    {
+        name: "Harbin",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+
+    // ROC/PRAN Ultra Rare
+
+    // ROC/PRAN Super Rare
+
+    {
+        name: "Chang Wu",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Chien Wu",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Huan Ch'ang",
+        opts: {
+            faction: ["dragon_empery"],
+            rarity: ["super_rare"],
+            type: ["bc"]
+        }
+    },
+
+    // ROC/PRAN Elite
+
+        {
+            name: "An Shan",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Chang Chun",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Chang Feng",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Chao Ho",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Chen Hai",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Chi An",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Fei Yuen",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fu Po",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fu Shun",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hai Chi",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hai Chou",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hai Tien",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hai Yung",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hu Pen",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hwah Jah",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Lung Wu",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ning Hai",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Ping Hai",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Tai Yuan",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ting An",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["ae"]
+            }
+        },
+    {
+            name: "Yat Sen",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Ying Swei",
+            opts: {
+                faction: ["dragon_empery"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // Northern Parliament
+    // =========================
+
+    // SN Retrofit
+
+    {
+        name: "Pamiat' Merkuria (Retrofit)",
+        img: "pamiat'_merkuriakai.png",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+
+    // SN Decisive
+
+    {
+        name: "Admiral Nakhimov",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["decisive"],
+            type: ["cv"]
+        }
+    },
+
+    // SN Priority
+
+    {
+        name: "Chkalov",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["priority"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Dmitri Donskoi",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+
+    // SN Ultra Rare
+
+    {
+        name: "Kronshtadt",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["ultra_rare"],
+            type: ["cb"]
+        }
+    },
+    {
+        name: "Moskva",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["ultra_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Sovetsky Soyuz",
+        opts: {
+            faction: ["northern_parliament"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+
+    // SN Super Rare
+
+        {
+            name: "Avrora",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Chapayev",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kazan",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Kiev",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kirov",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kursk",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Kuybyshev",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Ognevoy",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Ozornoy",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Sovetskaya Belorussiya",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Sovetskaya Rossiya",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Tallinn",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Tashkent",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Tashkent µ",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["dd"],
+                alt: true
+            }
+        },
+    {
+            name: "Volga",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Voroshilov",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+
+    // SN Elite
+
+        {
+            name: "Arkhangelsk",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Bogatyr",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Gangut",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Gremyashchy",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Gromky",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Grozny",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Krasny Kavkaz",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Minsk",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Murmansk",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Oleg",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Pamiat' Merkuria",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Poltava",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Sevastopol",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Soobrazitelny",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Stremitelny",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Svirepy",
+            opts: {
+                faction: ["northern_parliament"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // Iris Libre
+    // =========================
+
+    // FFNF Retrofit
+
+    {
+        name: "Émile Bertin (Retrofit)",
+        img: "émile_bertinkai.png",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["super_rare"],
+            type: ["cl"],
+            retrofit: true
+        }
+    }, 
+    {
+        name: "Forbin (Retrofit)",
+        img: "forbinkai.png",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    }, 
+
+    // FFNF Decisive
+
+    {
+        name: "Brest",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["decisive"],
+            type: ["cb"]
+        }
+    },
+
+    // FFNF Priority
+
+    {
+        name: "Bayard",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["priority"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Champagne",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Orage",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["priority"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Saint Louis",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["priority"],
+            type: ["ca"]
+        }
+    },
+
+    // FFNF Ultra Rare
+
+    {
+        name: "Alsace",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+
+    // FFNF Super Rare
+
+        {
+            name: "Arromanches",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Bois Belleau",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Brennus",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Cherbourg",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cb"]
+            }
+        },
+    {
+            name: "Guichen",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Jeanne d'Arc",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Le Hardi",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Le Terrible",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Le Triomphant",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Masséna",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Painlevé",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Richelieu",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+
+    // FFNF Elite
+
+        {
+            name: "Béarn",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Duguay-Trouin",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Duquesne",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "L'Intrépide",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "L'Opiniâtre",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Le Téméraire",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Le Téméraire µ",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["dd"],
+                alt: true
+            }
+        },
+    {
+            name: "Lyon",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Maillé Brézé",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Suffren",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Surcouf",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Émile Bertin",
+            opts: {
+                faction: ["iris_libre"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+
+    // FFNF Rare
+
+    {
+        name: "Forbin",
+        opts: {
+            faction: ["iris_libre"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+
+    // Common
+
+    // =========================
+    // Vichya Dominion
+    // =========================
+
+    // MNF Retrofit
+
+    {
+        name: "Le Mars (Retrofit)",
+        img: "le_marskai.png",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"],
+            retrofit: true
+        }
+    }, 
+
+    // MNF Decisive
+
+    // MNF Priority
+
+    {
+        name: "Flandre",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Gascogne",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+
+    // MNF Ultra Rare
+
+    {
+        name: "Mogador",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["ultra_rare"],
+            type: ["dd"]
+        }
+    },
+
+    // MNF Super Rare
+
+    {
+        name: "Algérie",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Clemenceau",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Gascogne µ",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["bb"],
+            alt: true
+        }
+    },
+    {
+        name: "Jean Bart",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Joffre",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "L'Audacieux",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "L'Indomptable",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Le Malin",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Le Malin µ",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["dd"],
+            alt: true
+        }
+    },
+    {
+        name: "Marseillaise",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Strasbourg",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["super_rare"],
+            type: ["bc"]
+        }
+    },
+
+    // MNF Elite
+
+    {
+        name: "Dunkerque",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["bc"]
+        }
+    },
+    {
+        name: "Dupleix",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Fleuret",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Foch",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Kersaint",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "La Galissonnère",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Tartu",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Vauquelin",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Épée",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // MNF Rare
+
+    {
+        name: "Le Mars",
+        opts: {
+            faction: ["vichya_dominion"],
+            rarity: ["rare"],
+            type: ["dd"]
+        }
+    },
+
+    // Common
+
+    // =========================
+    // Sardegna Empire
+    // =========================
+
+    // RN Retrofit
+
+    // RN Decisive
+
+    {
+        name: "Napoli",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["decisive"],
+            type: ["ca"]
+        }
+    },
+
+    // RN Priority
+
+    {
+        name: "Marco Polo",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["priority"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Vittorio Cuniberti",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["priority"],
+            type: ["dd"]
+        }
+    },
+
+    // RN Ultra Rare
+
+    {
+        name: "Raffaello",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["ultra_rare"],
+            type: ["bb"]
+        }
+    },
+
+    // RN Super Rare
+
+    {
+        name: "Aquila",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Attilio Regolo",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Duca degli Abruzzi",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Francesco Caracciolo",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Giuseppe Garibaldi",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Gorizia",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Impero",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Leonardo da Vinci",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Littorio",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Maggiore Baracca",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Pola",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Pompeo Magno",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Roma",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Vittorio Veneto",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Zara",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["super_rare"],
+            type: ["ca"]
+        }
+    },
+
+    // RN Elite
+
+    {
+        name: "Albertio di Giussano",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Alfredo Oriani",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Andrea Doria",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Bartolomeo Colleoni",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["cl"]
+        }
+    },
+    {
+        name: "Bolzano",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Carabiniere",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Emanuele Pessagno",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Giosuè Carducci",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Giulio Cesare",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Libeccio",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Maestrale",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Nicoloso da Recco",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Torricelli",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["ss"]
+        }
+    },
+    {
+        name: "Trieste",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+    {
+        name: "Ugolino Vivaldi",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "Vincenzo Gioberti",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // RN Rare
+
+    {
+        name: "Conte di Cavour",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["rare"],
+            type: ["bb"]
+        }
+    },
+    {
+        name: "Trento",
+        opts: {
+            faction: ["sardegna_empire"],
+            rarity: ["rare"],
+            type: ["ca"]
+        }
+    },
+
+    // Common
+
+    // =========================
+    // Kingdom of Tulipa
+    // =========================
+
+    // HNLMS Retrofit
+
+    // HNLMS Decisive
+
+    {
+        name: "Gouden Leeuw",
+        opts: {
+            faction: ["kingdom_of_tulipa"],
+            rarity: ["decisive"],
+            type: ["ca"]
+        }
+    },
+
+    // HNLMS Priority
+
+    // HNLMS Ultra Rare
+
+    // HNLMS Super Rare
+
+    {
+        name: "De Zeven Provinciën",
+        opts: {
+            faction: ["kingdom_of_tulipa"],
+            rarity: ["super_rare"],
+            type: ["cl"]
+        }
+    },
+
+    // HNLMS Elite
+
+    {
+        name: "Evertsen",
+        opts: {
+            faction: ["kingdom_of_tulipa"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // HNLMS Rare
+
+    // HNLMS Common
+
+    // =========================
+    // Liga de Pedrería
+    // =========================
+
+    // Retrofit
+
+    // Decisive
+    
+    {
+        name: "Valparaíso",
+        opts: {
+            faction: ["liga_de_pedreria"],
+            rarity: ["decisive"],
+            type: ["bb"]
+        }
+    },
+
+    // Priority
+
+    // Ultra Rare
+
+    // Super Rare
+
+    // Elite
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // META
+    // =========================
+
+    // Unreleased
+
+    {
+        name: "Akagi META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Bon Homme Richard META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Enterprise META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Essex META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Saratoga META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["cv"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Soobrazitelny META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["dd"],
+            unreleased: true
+        }
+    },
+    {
+        name: "Takao META",
+        opts: {
+            faction: ["meta"],
+            rarity: [""],
+            type: ["ca"],
+            unreleased: true
+        }
+    },
+
+    // Decisive
+
+    // Priority
+
+    // Ultra Rare
+
+    // Super Rare
+
+        {
+            name: "Admiral Hipper META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Algérie META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Andrea Doria META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Arizona META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Ark Royal META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Béarn META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Bristol META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Cleveland META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Elbe META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Gangut META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Glorious META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Gneisenau META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Helena META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hiei META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Hiryuu META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Hornet META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Jintsuu META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kawakaze META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kirov META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Nagato META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Pamiat' Merkuria META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Queen Elizabeth META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Regensburg META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Renown META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Repulse META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Rodney META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Scharnhorst META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Souryuu META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Taihou META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "U-556 META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Wichita META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Yorktown META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Yuudachi META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+
+    // Elite
+
+        {
+            name: "Boise META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Bolzano META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Carabiniere META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Dewey META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Dunkerque META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Erebus META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bm"]
+            }
+        },
+    {
+            name: "Foch META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Fortune META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Fusou META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Giulio Cesare META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Grenville META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hatakaze META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Hiyou META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Houshou META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Hunter META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Junyou META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Kasumi META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Kimberly META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Köln META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Königsberg META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "La Galissonnière META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Memphis META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Nevada META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Nürnberg META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Princeton META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Sheffield META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Trento META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Vampire META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Vestal META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["ar"]
+            }
+        },
+    {
+            name: "Yamashiro META",
+            opts: {
+                faction: ["meta"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // Tempesta
+    // =========================
+
+    // Retrofit
+
+    // Decisive
+
+    // Priority
+
+    // Ultra Rare
+
+    // Super Rare
+
+    {
+        name: "Amity",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixs"]
+        }
+    },
+    {
+        name: "Fancy",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Ganj-i-Sawai",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixm"]
+        }
+    },
+    {
+        name: "Golden Hind",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Lyme",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Mary Celeste",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixs"]
+        }
+    },
+    {
+        name: "Pearl",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixm"]
+        }
+    },
+    {
+        name: "Queen Anne's Revenge",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixm"]
+        }
+    },
+    {
+        name: "Royal Fortune",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixs"]
+        }
+    },
+    {
+        name: "São Martinho",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["super_rare"],
+            type: ["ixm"]
+        }
+    },
+
+    // Elite
+
+    {
+        name: "Adventure",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixs"]
+        }
+    },
+    {
+        name: "Adventure Galley",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Dolphin",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixs"]
+        }
+    },
+    {
+        name: "Portsmouth Adventure",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Royal James",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixv"]
+        }
+    },
+    {
+        name: "Whydah",
+        opts: {
+            faction: ["tempesta"],
+            rarity: ["elite"],
+            type: ["ixs"]
+        }
+    },
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // Siren
+    // =========================
+
+    // Elite Sirens
+
+    {
+        name: "Tester",
+        opts: {
+            faction: ["siren"],
+            type: ["bb"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Observer",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Purifier",
+        opts: {
+            faction: ["siren"],
+            type: ["bb"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Omitter",
+        opts: {
+            faction: ["siren"],
+            type: ["bb"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Compiler",
+        opts: {
+            faction: ["siren"],
+            type: ["cv"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // DOS
+
+    {
+        name: "Ordainer El",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // Arbiters
+
+    {
+        name: "Arbiter: The Empress III",
+        img: "arbiter_the_empress_iii.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Lovers VI",
+        img: "arbiter_the_lovers_vi.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: Strength VIII",
+        img: "arbiter_strength_viii.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: Temperance XIV",
+        img: "arbiter_temperance_xiv.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Hermit IX",
+        img: "arbiter_the_hermi_ix.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Devil XV",
+        img: "arbiter_the_devil_xv.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Tower XVI",
+        img: "arbiter_the_tower_xvi.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Hierophant V",
+        img: "arbiter_the_hierophant_v.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: Death XIII (Miss D)",
+        img: "arbiter_death_xiii_(miss_d).png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Moon XVIII",
+        img: "arbiter_the_moon_xviii.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Magician I",
+        img: "arbiter_the_magician_i.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Chariot VII",
+        img: "arbiter_the_chariot_vii.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Star XVII",
+        img: "arbiter_the_star_xvii.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unkown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Arbiter: The Emperor IV",
+        img: "arbiter_the_emperor_iv.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // Enforcers
+
+    {
+        name: "Enforcer III: Harvest",
+        img: "enforcer_ii_harvestchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["bb"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer VIII: Determination",
+        img: "enforcer_viii_determinationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["ca"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer IX: Exploration",
+        img: "enforcer_ix_explorationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["bb"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer IX: Concealment",
+        img: "enforcer_ix_concealmentchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["cl"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer XIV: Equilibrium",
+        img: "enforcer_xiv_equilibriumchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["dd"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer XIV: Harmony",
+        img: "enforcer_xiv_harmonychibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["cv"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer VI: Attraction",
+        img: "enforcer_vi_attractionchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["bb"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer VI: Combination",
+        img: "enforcer_vi_combinationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["cv"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer XV: Restriction",
+        img: "enforcer_xv_restrictionchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["ca"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer XV: Temptation",
+        img: "enforcer_xv_temptationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["dd"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer V: Regulation",
+        img: "enforcer_v_regulationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["cl"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer V: Orthodoxy",
+        img: "enforcer_v_orthodoxychibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["ca"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer VII: Victory",
+        img: "enforcer_vii_victorychibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["bm"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+    {
+        name: "Enforcer VII: Pulverization",
+        img: "enforcer_vii_pulverizationchibi.png",
+        opts: {
+            faction: ["siren"],
+            rarity: [""],
+            type: ["cb"],
+            unplayable: true,
+            siren: true,
+            chibionly:true
+        }
+    },
+
+    // Observer Zero
+
+    {
+        name: "Observer Zero",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // War Protocol
+
+    {
+        name: "War Protocol Fortress",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "War Protocol Scythe",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // ???
+
+    {
+        name: "???",
+        img: "undefined_light.png",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+
+    // Allied Operation Siren & Project Identity
+
+    {
+        name: "TB",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Navi",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    {
+        name: "Lora",
+        opts: {
+            faction: ["siren"],
+            type: ["unknown"],
+            unreleased: true,
+            siren: true
+        }
+    },
+    
+
+    // =========================
+    // Human
+    // =========================
+
+    {
+        name: "Dr. Aoste",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Dr. Anzeel",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Silver Fox",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Colette",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Eutopia Savoy",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Ryouko Amahara",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Princess Maria",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Madam M",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+    {
+        name: "Lady E",
+        opts: {
+            faction: ["human"],
+            type: ["unknown"],
+            human: true
+        }
+    },
+
+    // =========================
+    // Collaboration
+    // =========================
+
+    // Retrofit
+
+    // Decisive
+
+    // Priority
+
+    // Ultra Rare
+
+    // Super Rare
+
+        {
+            name: "2B",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "A2",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Akane Shinjo",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Anniversary Kizuna AI",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Asuka",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Azusa Miura",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Black Heart",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "BLACK★ROCK SHOOTER",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Chihaya Kisaragi",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Chise Asukagawa",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "DEAD MASTER",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Elegant Kizuna AI",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Elise",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Fubuki (Senran Kagura)",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Golden Darkness",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Green Heart",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Haruka Amami",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Hestia",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ar"]
+            }
+        },
+    {
+            name: "Homura",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Honoka",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Ikaruga",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Iori Minase",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Isla von Duerer",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kaguya Yamai・Yuzuru Yamai",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kala Ideas",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Kasumi (Venus Vacation)",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Klaudia Valentz",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Kotori Itsuka",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Kurumi Tokisaki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Lala Satalin Deviluke",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Lenja",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Luna",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Marie Rose",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Minato Aqua",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Misaki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Momo Belia Deviluke",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Nana Astar Deviluke",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Nina Friede",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Origami Tobiichi",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Patricia Abelheim",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Patty",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Princess Hime",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ae"]
+            }
+        },
+    {
+            name: "Purple Heart",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Reisalin Stout",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Rikka Takarada",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Ryu Lion",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Shandy",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Shirakami Fubuki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Shizuku",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Super Gamer Kizuna AI",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Tamaki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "The 2nd",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["bbv"]
+            }
+        },
+    {
+            name: "Tohka Yatogami",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Tokino Sora",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Tsukushi",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "White Heart",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Yoshino",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Yukino",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Yume Minami",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Yumi",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Yumia Liessfeldt",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["super_rare"],
+                type: ["cvl"]
+            }
+        },
+
+    // Elite
+
+    {
+        name: "22",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+    {
+        name: "33",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+        {
+            name: "Ami Futami",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Blanc",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+        {
+        name: "Fumiruiru",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+            name: "Haruna Sairenji",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["bc"]
+            }
+        },
+    {
+            name: "Hass",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Kizuna AI",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Lila Decyrus",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Mami Futami",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ss"]
+            }
+        },
+    {
+            name: "Monica",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Mujina",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Murasaki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Murasaki Shion",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cvl"]
+            }
+        },
+    {
+            name: "Nagisa",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["bb"]
+            }
+        },
+    {
+            name: "Nakiri Ayame",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Namiko",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Natsuiro Matsuri",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["dd"]
+            }
+        },
+    {
+            name: "Neptune (Neptunia)",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cl"]
+            }
+        },
+    {
+            name: "Noire",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ca"]
+            }
+        },
+    {
+            name: "Nyotengu",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Ookami Mio",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+    {
+            name: "Ritsuko Akizuki",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["ae"]
+            }
+        },
+        {
+        name: "Saraana",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+            name: "Serri Glaus",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+        {
+        name: "Uruuru",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["cvl"]
+        }
+    },
+    {
+            name: "Vert",
+            opts: {
+                faction: ["collaboration"],
+                rarity: ["elite"],
+                type: ["cv"]
+            }
+        },
+        {
+        name: "Yui Kotegawa",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["cv"]
+        }
+    },
+    {
+        name: "Yūyaki",
+        opts: {
+            faction: ["collaboration"],
+            rarity: ["elite"],
+            type: ["ca"]
+        }
+    },
+
+    // Rare
+
+    // Common
+
+    // =========================
+    // Universal
+    // =========================
+
+    // Retrofit
+
+    // Decisive
+
+    // Priority
+
+    // Ultra Rare
+
+    {
+        name: "Universal Bulin",
+        opts: {
+            faction: ["universal"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // Super Rare
+
+    {
+        name: "Prototype Bulin MKII",
+        opts: {
+            faction: ["universal"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // Elite
+
+    {
+        name: "Specialized Bulin Custom MKIII",
+        opts: {
+            faction: ["universal"],
+            rarity: ["elite"],
+            type: ["dd"]
+        }
+    },
+
+    // Rare
+
+    // Common
+
+];

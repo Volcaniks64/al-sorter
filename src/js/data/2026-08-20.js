@@ -8169,7 +8169,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Enforcer III: Harvest",
-        img: "Enforcer_iii_HarvestChibi.png",
+        img: "Enforcer_III_HarvestChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8373,7 +8373,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "???",
-        img: "undefined_light.png",
+        img: "Undefined_Light.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],

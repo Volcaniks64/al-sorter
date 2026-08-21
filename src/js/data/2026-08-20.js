@@ -10,10 +10,8 @@ dataSet[dataSetVersion].options = [
         checked: false,
         sub: [
             { name: "Include Retrofits", tooltip: "Include Retrofits. The original version will still be included as well, so you will end up with e.g. Belfast and Belfast (Retrofit)", key: "retrofit" },
-            { name: "Include Alts", tooltip: "Include Alt version such as Muse, Loli, II etc.", key: "alt" },
+            { name: "Include Alts", tooltip: "Include alt versions of ships such as smol ships like Amagi-chan, Muse version and modern version like Laffey II", key: "alt" },
             { name: "Include Unreleased", tooltip: "Includes currently unreleased ships such as Enterprise META or Takao META", key: "unreleased" },
-            { name: "Include Sirens", tooltip: "Includes Sirens, Arbiters, TB and the like. Be aware that there WILL be spoilers included!", key: "siren" },
-            { name: "Include Humans", tooltip: "Includes humans from the story such as Dr. Aoste and Dr. Anzeel. Be aware that there WILL be spoilers included!", key: "human" },
             { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if 'Include Sirens' isn't turned on", key: "chibionly" }
         ]
     },
@@ -38,7 +36,9 @@ dataSet[dataSetVersion].options = [
             { name: "META", key: "meta" },
             { name: "Tempesta", key: "tempesta" },
             { name: "Universal", key: "universal" },
-            { name: "Collaboration", key: "collaboration" }
+            { name: "Collaboration", key: "collaboration" },
+            { name: "Siren", key: "siren" },
+            { name: "Human", key: "human" }
         ]
     },
 
@@ -2430,7 +2430,7 @@ dataSet[dataSetVersion].characterData = [
         }
     },
     {
-        name: "Eerebus",
+        name: "Erebus",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -2738,7 +2738,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2746,7 +2747,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -2754,7 +2756,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4642,7 +4645,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["cl"]
+                type: ["cl"], 
+                original: true
             }
         },
     {
@@ -5207,7 +5211,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["iron_blood"],
                 rarity: ["elite"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -6771,7 +6776,7 @@ dataSet[dataSetVersion].characterData = [
         }
     },
     {
-        name: "La Galissonnère",
+        name: "La Galissonnière",
         opts: {
             faction: ["vichya_dominion"],
             rarity: ["elite"],
@@ -6989,7 +6994,7 @@ dataSet[dataSetVersion].characterData = [
     // RN Elite
 
     {
-        name: "Albertio di Giussano",
+        name: "Alberto di Giussano",
         opts: {
             faction: ["sardegna_empire"],
             rarity: ["elite"],
@@ -8062,7 +8067,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Hermit IX",
-        img: "arbiter_the_hermi_ix.png",
+        img: "arbiter_the_hermit_ix.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8165,7 +8170,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Enforcer III: Harvest",
-        img: "enforcer_ii_harvestchibi.png",
+        img: "enforcer_iii_harvestchibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -9255,7 +9260,7 @@ dataSet[dataSetVersion].characterData = [
         name: "Prototype Bulin MKII",
         opts: {
             faction: ["universal"],
-            rarity: ["elite"],
+            rarity: ["super_rare"],
             type: ["dd"]
         }
     },
@@ -9266,7 +9271,7 @@ dataSet[dataSetVersion].characterData = [
         name: "Specialized Bulin Custom MKIII",
         opts: {
             faction: ["universal"],
-            rarity: ["elite"],
+            rarity: ["ultra_rare"],
             type: ["dd"]
         }
     },

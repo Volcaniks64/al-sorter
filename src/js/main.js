@@ -206,7 +206,11 @@ options.forEach((opt, index) => {
       });
     }
   } else if (optTaken[index]) {
-    characterDataToSort = characterDataToSort.filter(char => !char.opts[opt.key]);
+    if (opt.key === 'recent') {
+      characterDataToSort = characterDataToSort.filter(char => char.opts.recent === true);
+    } else {
+      characterDataToSort = characterDataToSort.filter(char => !char.opts[opt.key]);
+    }
   }
 });
 

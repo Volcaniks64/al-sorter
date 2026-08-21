@@ -8229,7 +8229,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer XIV: Harmony",
-        img: "Enforcer_XIV_Harmonychibi.png",
+        img: "Enforcer_XIV_HarmonyChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],

@@ -7,12 +7,13 @@ dataSet[dataSetVersion].options = [
         name: "Roster Options",
         key: "roster",
         tooltip: "Choose which types of characters should be included.",
-        checked: false,
+        checked: true,
         sub: [
-            { name: "Include Retrofits", tooltip: "Include Retrofits. The original version will still be included as well, so you will end up with e.g. Belfast and Belfast (Retrofit)", key: "retrofit" },
-            { name: "Include Alts", tooltip: "Include alt versions of ships such as smol ships like Amagi-chan, Muse version and modern version like Laffey II", key: "alt" },
-            { name: "Include Unreleased", tooltip: "Includes currently unreleased ships such as Enterprise META or Takao META", key: "unreleased" },
-            { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if 'Include Sirens' isn't turned on", key: "chibionly" }
+            { name: "Include Smol", tooltip: "Include Smol versions of ships such as Amagi-chan", key: "smol" },
+            { name: "Include Unreleased", tooltip: "Includes currently unreleased ships such as Enterprise META and Takao META", key: "unreleased" },
+            { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if you exclude the Siren faction", key: "chibionly" },
+            { name: "Include Muse", tooltip: "Include Muse versions of ships", key: "muse", checked: false },
+            { name: "Include Original", tooltip: "Include original versions of ships that have received a retrofit or an alt. For ships that have both an alt and a retrofit, the original and retrofit will both be included", key: "original", checked: false}
         ]
     },
 
@@ -183,7 +184,8 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["super_rare"],
             type: ["dd"],
-            retrofit: true
+            retrofit: true,
+            original: true
         }
     },
     {
@@ -253,7 +255,8 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["dd"],
-            retrofit: true
+            retrofit: true,
+            original: true
         }
     },
     {
@@ -333,7 +336,8 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["rare"],
             type: ["cvl"],
-            retrofit: true
+            retrofit: true,
+            original: true
         }
     },
         {
@@ -578,7 +582,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -594,7 +599,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -733,7 +739,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -802,7 +809,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["ss"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -827,7 +834,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["ca"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -884,7 +891,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["cl"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -892,7 +899,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -909,7 +917,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["cl"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -926,7 +934,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["cl"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -934,7 +942,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -991,7 +1000,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -1007,7 +1017,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -1015,7 +1026,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
     {
@@ -1023,7 +1035,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cvl"]
+            type: ["cvl"],
+            original: true
         }
     },
     {
@@ -1047,7 +1060,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1073,7 +1087,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -1082,7 +1097,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["cl"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -1091,7 +1106,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["ca"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -1100,7 +1115,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["eagle_union"],
             rarity: ["elite"],
             type: ["cv"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -1116,7 +1131,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -1124,7 +1140,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1164,7 +1181,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1204,7 +1222,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -1244,7 +1263,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -1260,7 +1280,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
 
@@ -1295,7 +1316,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1391,7 +1413,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1431,7 +1454,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -1455,7 +1479,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["cvl"]
+            type: ["cvl"],
+            original: true
         }
     },
     {
@@ -1479,7 +1504,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
     {
@@ -1503,7 +1529,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
     {
@@ -1527,7 +1554,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1586,7 +1614,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["cvl"]
+            type: ["cvl"],
+            original: true
         }
     },
     {
@@ -1594,7 +1623,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1610,7 +1640,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -1626,7 +1657,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["cvl"]
+            type: ["cvl"],
+            original: true
         }
     },
     {
@@ -1642,7 +1674,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -1650,7 +1683,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -1682,7 +1716,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["eagle_union"],
             rarity: ["common"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -2091,7 +2126,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -2132,7 +2168,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["super_rare"],
             type: ["cl"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -2157,7 +2193,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["super_rare"],
             type: ["cv"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -2198,7 +2234,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["super_rare"],
             type: ["cv"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -2326,7 +2362,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
 
@@ -2353,7 +2390,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["cv"]
+            type: ["cv"],
+            original: true
         }
     },
     {
@@ -2449,7 +2487,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
     {
@@ -2481,7 +2520,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -2529,7 +2569,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
     {
@@ -2538,7 +2579,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["elite"],
             type: ["cl"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -2547,7 +2588,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["elite"],
             type: ["ca"], 
-            alt: true
+            smol: true
         }
     },
     {
@@ -2556,7 +2597,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["elite"],
             type: ["cv"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -2565,7 +2606,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["elite"],
             type: ["cv"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -2574,7 +2615,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["royal_navy"],
             rarity: ["elite"],
             type: ["bc"],
-            alt: true
+            smol: true
         }
     },
     {
@@ -2590,7 +2631,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
     {
@@ -2622,7 +2664,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["bb"]
+            type: ["bb"],
+            original: true
         }
     },
     {
@@ -2678,7 +2721,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["cl"]
+            type: ["cl"],
+            muse: true
         }
     },
     {
@@ -2702,7 +2746,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["cvl"]
+            type: ["cvl"],
+            original: true
         }
     },
     {
@@ -2726,7 +2771,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
-            type: ["ca"]
+            type: ["ca"],
+            original: true
         }
     },
 
@@ -2764,7 +2810,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2772,7 +2819,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2788,7 +2836,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -2796,7 +2845,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -2820,7 +2870,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2892,7 +2943,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -2916,7 +2968,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -2932,7 +2985,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["rare"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -2967,7 +3021,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2975,7 +3030,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2983,7 +3039,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2991,7 +3048,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -2999,7 +3057,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["cvl"]
+                type: ["cvl"],
+                original: true
             }
         },
     {
@@ -3007,7 +3066,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["royal_navy"],
                 rarity: ["common"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
 
@@ -3504,7 +3564,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
                 type: ["cv"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -3520,7 +3580,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
-                type: ["bc"]
+                type: ["bc"],
+                original: true
             }
         },
     {
@@ -3609,7 +3670,8 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
                 type: ["bb"],
-                alt: true
+                alt: true,
+                original: true
             }
         },
     {
@@ -3682,7 +3744,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
                 type: ["cl"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -3755,7 +3817,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
                 type: ["cv"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -3811,7 +3873,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -3847,7 +3910,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["cv"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -3856,7 +3919,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["bc"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -3880,7 +3943,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -3969,7 +4033,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["bc"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -3977,7 +4041,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cv"]
+                type: ["cv"],
+                original: true
             }
         },
     {
@@ -4025,7 +4090,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4041,7 +4107,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4049,7 +4116,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4082,7 +4150,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["bc"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -4130,7 +4198,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4139,7 +4208,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["bb"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -4203,7 +4272,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4212,7 +4282,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["cv"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -4228,7 +4298,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cv"]
+                type: ["cv"],
+                original: true
             }
         },
     {
@@ -4261,7 +4332,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["cv"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -4278,7 +4349,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
                 type: ["ca"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -4318,7 +4389,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
 
@@ -4345,7 +4417,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4369,7 +4442,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["bb"]
+                type: ["bb"],
+                original: true
             }
         },
     {
@@ -4377,7 +4451,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4393,7 +4468,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4401,7 +4477,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4417,7 +4494,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["bb"]
+                type: ["bb"],
+                original: true
             }
         },
     {
@@ -4441,7 +4519,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["bb"]
+                type: ["bb"],
+                original: true
             }
         },
     {
@@ -4457,7 +4536,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4473,7 +4553,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4481,7 +4562,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4505,7 +4587,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4529,7 +4612,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -4577,7 +4661,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -4585,7 +4670,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4593,7 +4679,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["cvl"]
+                type: ["cvl"],
+                original: true
             }
         },
     {
@@ -4601,7 +4688,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4625,7 +4713,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["bb"]
+                type: ["bb"],
+                original: true
             }
         },
     {
@@ -4633,7 +4722,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
 
@@ -4661,7 +4751,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -4669,7 +4760,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["ca"]
+                type: ["ca"],
+                original: true
             }
         },
     {
@@ -4685,7 +4777,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4709,7 +4802,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4725,7 +4819,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["common"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -4794,7 +4889,7 @@ dataSet[dataSetVersion].characterData = [
         }
     }, 
     {
-        name: "Köln",
+        name: "Köln (Retrofit)",
         img: "KölnKai.png",
         opts: {
             faction: ["iron_blood"],
@@ -4973,7 +5068,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["iron_blood"],
                 rarity: ["super_rare"],
-                type: ["bb"]
+                type: ["bb"],
+                original: true
             }
         },
     {
@@ -5078,7 +5174,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["super_rare"],
                 type: ["ca"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -5111,7 +5207,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["super_rare"],
                 type: ["ca"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -5220,7 +5316,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["ca"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -5269,7 +5365,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["bb"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -5278,7 +5374,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["ca"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -5287,7 +5383,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["ca"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -5296,7 +5392,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["cb"],
-                alt: true
+                smol: true
             }
         },
     {
@@ -5408,7 +5504,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["iron_blood"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5464,7 +5561,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["iron_blood"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5537,7 +5635,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iron_blood"],
                 rarity: ["elite"],
                 type: ["cv"],
-                alt: true
+                smol: true
             }
         },
 
@@ -5548,7 +5646,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["iron_blood"],
             rarity: ["rare"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -5575,7 +5674,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["iron_blood"],
             rarity: ["common"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -5583,7 +5683,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["iron_blood"],
             rarity: ["common"],
-            type: ["cl"]
+            type: ["cl"],
+            original: true
         }
     },
     {
@@ -5777,7 +5878,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5785,7 +5887,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5801,7 +5904,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -5809,7 +5913,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cvl"]
+                type: ["cvl"],
+                original: true
             }
         },
     {
@@ -5841,7 +5946,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5889,7 +5995,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cvl"]
+                type: ["cvl"],
+                original: true
             }
         },
     {
@@ -5905,7 +6012,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -5913,7 +6021,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -5921,7 +6030,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["dd"]
+                type: ["dd"],
+                original: true
             }
         },
     {
@@ -5937,7 +6047,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -5945,7 +6056,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["dragon_empery"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
 
@@ -6139,7 +6251,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["northern_parliament"],
                 rarity: ["super_rare"],
                 type: ["dd"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -6246,7 +6358,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["northern_parliament"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
     {
@@ -6533,7 +6646,7 @@ dataSet[dataSetVersion].characterData = [
                 faction: ["iris_libre"],
                 rarity: ["elite"],
                 type: ["dd"],
-                alt: true
+                muse: true
             }
         },
     {
@@ -6573,7 +6686,8 @@ dataSet[dataSetVersion].characterData = [
             opts: {
                 faction: ["iris_libre"],
                 rarity: ["elite"],
-                type: ["cl"]
+                type: ["cl"],
+                original: true
             }
         },
 
@@ -6584,7 +6698,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["iris_libre"],
             rarity: ["rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
 
@@ -6663,7 +6778,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["vichya_dominion"],
             rarity: ["super_rare"],
             type: ["bb"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -6712,7 +6827,7 @@ dataSet[dataSetVersion].characterData = [
             faction: ["vichya_dominion"],
             rarity: ["super_rare"],
             type: ["dd"],
-            alt: true
+            muse: true
         }
     },
     {
@@ -6814,7 +6929,8 @@ dataSet[dataSetVersion].characterData = [
         opts: {
             faction: ["vichya_dominion"],
             rarity: ["rare"],
-            type: ["dd"]
+            type: ["dd"],
+            original: true
         }
     },
 

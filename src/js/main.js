@@ -206,11 +206,7 @@ options.forEach((opt, index) => {
       });
     }
   } else if (optTaken[index]) {
-    if (opt.key === 'recent') {
-      characterDataToSort = characterDataToSort.filter(char => char.opts.recent === true);
-    } else {
-      characterDataToSort = characterDataToSort.filter(char => !char.opts[opt.key]);
-    }
+    characterDataToSort = characterDataToSort.filter(char => !char.opts[opt.key]);
   }
 });
 
@@ -313,7 +309,6 @@ function display() {
   document.querySelector('.left.sort.image').src = leftChar.img;
   document.querySelector('.right.sort.image').src = rightChar.img;
 
-  
 
   document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name);
   document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name);

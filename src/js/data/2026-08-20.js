@@ -7269,7 +7269,7 @@ dataSet[dataSetVersion].characterData = [
     {
         name: "Gouden Leeuw",
         opts: {
-            faction: ["kingdom_of_tulipa"],
+            faction: ["tulipa"],
             rarity: ["decisive"],
             type: ["ca"]
         }
@@ -7284,7 +7284,7 @@ dataSet[dataSetVersion].characterData = [
     {
         name: "De Zeven Provinciën",
         opts: {
-            faction: ["kingdom_of_tulipa"],
+            faction: ["tulipa"],
             rarity: ["super_rare"],
             type: ["cl"]
         }
@@ -7295,7 +7295,7 @@ dataSet[dataSetVersion].characterData = [
     {
         name: "Evertsen",
         opts: {
-            faction: ["kingdom_of_tulipa"],
+            faction: ["tulipa"],
             rarity: ["elite"],
             type: ["dd"]
         }

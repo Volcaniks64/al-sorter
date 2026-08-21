@@ -108,7 +108,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Eldridge (Retrofit)",
-        img: "eldridgekai.png",
+        img: "EldridgeKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["ultra_rare"],
@@ -118,7 +118,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Essex (Retrofit)",
-        img: "essexkai.png",
+        img: "EssexKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -128,7 +128,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "San Diego (Retrofit)",
-        img: "san_diegokai.png",
+        img: "San_DiegoKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["ultra_rare"],
@@ -138,7 +138,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Charles Ausburne (Retrofit)",
-        img: "charles_ausburnekai.png",
+        img: "Charles_AusburneKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -148,7 +148,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Colorado (Retrofit)",
-        img: "coloradokai.png",
+        img: "ColoradoKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -158,7 +158,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Helena (Retrofit)",
-        img: "helenakai.png",
+        img: "HelenaKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -168,7 +168,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Independence (Retrofit)",
-        img: "independencekai.png",
+        img: "IndependenceKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -178,7 +178,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Laffey (Retrofit)",
-        img: "laffeykai.png",
+        img: "LaffeyKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -188,7 +188,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Maryland (Retrofit)",
-        img: "marylandkai.png",
+        img: "MarylandKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -198,7 +198,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Maury (Retrofit)",
-        img: "maurykai.png",
+        img: "MauryKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -208,7 +208,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Nicholas (Retrofit)",
-        img: "nicholaskai.png",
+        img: "NicholasKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -218,7 +218,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Saratoga (Retrofit)",
-        img: "saratogakai.png",
+        img: "SaratogaKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -228,7 +228,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "West Virginia (Retrofit)",
-        img: "west_virginiakai.png",
+        img: "West_VirginiaKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["super_rare"],
@@ -238,7 +238,7 @@ dataSet[dataSetVersion].characterData = [
     },
         {
         name: "Bailey (Retrofit)",
-        img: "baileykai.png",
+        img: "BaileyKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -248,7 +248,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Hammann (Retrofit)",
-        img: "hammannkai.png",
+        img: "HammannKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -258,7 +258,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Juneau (Retrofit)",
-        img: "juneaukai.png",
+        img: "JuneauKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -268,7 +268,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Long Island (Retrofit)",
-        img: "long_islandkai.png",
+        img: "Long_IslandKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -278,7 +278,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Portland (Retrofit)",
-        img: "portlandkai.png",
+        img: "PortlandKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -288,7 +288,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Sims (Retrofit)",
-        img: "simskai.png",
+        img: "SimsKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["elite"],
@@ -298,7 +298,7 @@ dataSet[dataSetVersion].characterData = [
     },
         {
         name: "Bogue (Retrofit)",
-        img: "boguekai.png",
+        img: "BogueKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -308,7 +308,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Cassin (Retrofit)",
-        img: "cassinkai.png",
+        img: "CassinKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -318,7 +318,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Downes (Retrofit)",
-        img: "downeskai.png",
+        img: "DownesKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -328,7 +328,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Langley (Retrofit)",
-        img: "langleykai.png",
+        img: "LangleyKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -338,7 +338,7 @@ dataSet[dataSetVersion].characterData = [
     },
         {
         name: "Nevada (Retrofit)",
-        img: "nevadakai.png",
+        img: "NevadaKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -348,7 +348,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Oklahoma (Retrofit)",
-        img: "oklahomakai.png",
+        img: "OklahomaKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -358,7 +358,7 @@ dataSet[dataSetVersion].characterData = [
     },
             {
         name: "Ranger (Retrofit)",
-        img: "rangerkai.png",
+        img: "RangerKai.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["rare"],
@@ -371,7 +371,6 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Kearsarge",
-        img: "kearsarge.png",
         opts: {
             faction: ["eagle_union"],
             rarity: ["decisive"],
@@ -1719,7 +1718,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Belfast (Retrofit)",
-        img: "belfastkai.png",
+        img: "BelfastKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["ultra_rare"],
@@ -1729,7 +1728,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Warspite (Retrofit)",
-        img: "warspitekai.png",
+        img: "WarspiteKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["ultra_rare"],
@@ -1739,7 +1738,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Ark Royal (Retrofit)",
-        img: "ark_royalkai.png",
+        img: "Ark_RoyalKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1749,7 +1748,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Exeter (Retrofit)",
-        img: "exeterkai.png",
+        img: "ExeterKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1759,7 +1758,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Glowworm (Retrofit)",
-        img: "glowwormkai.png",
+        img: "GlowwormKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1769,7 +1768,7 @@ dataSet[dataSetVersion].characterData = [
     },
         {
         name: "Javelin (Retrofit)",
-        img: "javelinkai.png",
+        img: "JavelinKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1779,7 +1778,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "London (Retrofit)",
-        img: "londonkai.png",
+        img: "LondonKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1789,7 +1788,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Nelson (Retrofit)",
-        img: "nelsonkai.png",
+        img: "NelsonKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1799,7 +1798,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Unicorn (Retrofit)",
-        img: "unicornkai.png",
+        img: "UnicornKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1809,7 +1808,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "York (Retrofit)",
-        img: "yorkkai.png",
+        img: "YorkKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["super_rare"],
@@ -1819,7 +1818,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Acasta (Retrofit)",
-        img: "acastakai.png",
+        img: "AcastaKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1829,7 +1828,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Achilles (Retrofit)",
-        img: "achilleskai.png",
+        img: "AchillesKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1839,7 +1838,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Ajax (Retrofit)",
-        img: "ajaxkai.png",
+        img: "AjaxKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1849,7 +1848,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Amazon (Retrofit)",
-        img: "amazonkai.png",
+        img: "AmazonKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1859,7 +1858,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Ardent (Retrofit)",
-        img: "ardentkai.png",
+        img: "ArdentKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1869,7 +1868,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Curacoa (Retrofit)",
-        img: "curacoakai.png",
+        img: "CuracoaKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1879,7 +1878,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Curlew (Retrofit)",
-        img: "curlewkai.png",
+        img: "CurlewKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1889,7 +1888,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Fortune (Retrofit)",
-        img: "fortunekai.png",
+        img: "FortuneKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1899,7 +1898,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Newcastle (Retrofit)",
-        img: "newcastlekai.png",
+        img: "NewcastleKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1909,7 +1908,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Shropshire (Retrofit)",
-        img: "shropshirekai.png",
+        img: "ShropshireKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1919,7 +1918,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Suffolk (Retrofit)",
-        img: "suffolkkai.png",
+        img: "SuffolkKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["elite"],
@@ -1929,7 +1928,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Comet (Retrofit)",
-        img: "cometkai.png",
+        img: "CometKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -1939,7 +1938,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Crescent (Retrofit)",
-        img: "crescentkai.png",
+        img: "CrescentKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -1949,7 +1948,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Cygnet (Retrofit)",
-        img: "cygnetkai.png",
+        img: "CygnetKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -1959,7 +1958,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Foxhound (Retrofit)",
-        img: "foxhoundkai.png",
+        img: "FoxhoundKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -1969,7 +1968,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Hermes (Retrofit)",
-        img: "hermeskai.png",
+        img: "HermesKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -1979,7 +1978,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Leander (Retrofit)",
-        img: "leanderkai.png",
+        img: "LeanderKai.png",
         opts: {
             faction: ["royal_navy"],
             rarity: ["rare"],
@@ -3020,7 +3019,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Yuudachi (Retrofit)",
-        img: "yuudachikai.png",
+        img: "YuudachiKai.png",
         opts: {
             faction: ["sakura_empire"],
             rarity: ["ultra_rare"],
@@ -3030,7 +3029,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
         {
             name: "Ayanami (Retrofit)",
-            img: "ayanamikai.png",
+            img: "AyanamiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3040,7 +3039,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Hiryuu (Retrofit)",
-            img: "hiryuukai.png",
+            img: "HiryuuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3050,7 +3049,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Jintsuu (Retrofit)",
-            img: "jintsuukai.png",
+            img: "JintsuuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3060,7 +3059,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kasumi (Retrofit)",
-            img: "kasumikai.png",
+            img: "KasumiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3070,7 +3069,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kinu (Retrofit)",
-            img: "kinukai.png",
+            img: "KinuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3080,7 +3079,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Mogami (Retrofit)",
-            img: "mogamikai.png",
+            img: "MogamiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3090,7 +3089,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Shigure (Retrofit)",
-            img: "shigurekai.png",
+            img: "ShigureKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3100,7 +3099,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Souryuu (Retrofit)",
-            img: "souryuukai.png",
+            img: "SouryuuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3110,7 +3109,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Yuubari (Retrofit)",
-            img: "yuubarikai.png",
+            img: "YuubariKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],
@@ -3120,7 +3119,7 @@ dataSet[dataSetVersion].characterData = [
         },
             {
             name: "Ariake (Retrofit)",
-            img: "ariakekai.png",
+            img: "AriakeKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3130,7 +3129,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Fusou (Retrofit)",
-            img: "fusoukai.png",
+            img: "FusouKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3140,7 +3139,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Hamakaze (Retrofit)",
-            img: "hamakazekai.png",
+            img: "HamakazeKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3150,7 +3149,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Hatsuharu (Retrofit)",
-            img: "hatsuharukai.png",
+            img: "HatsuharuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3160,7 +3159,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Hatsushimo (Retrofit)",
-            img: "hatsushimokai.png",
+            img: "HatsushimoKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3170,7 +3169,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Hyuuga (Retrofit)",
-            img: "hyuugakai.png",
+            img: "HyuugaKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3180,7 +3179,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Ise (Retrofit)",
-            img: "isekai.png",
+            img: "Isekai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3190,7 +3189,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Isuzu (Retrofit)",
-            img: "isuzukai.png",
+            img: "Isuzukai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3200,7 +3199,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kagerou (Retrofit)",
-            img: "kageroukai.png",
+            img: "KagerouKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3210,7 +3209,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kamikaze (Retrofit)",
-            img: "kamikazekai.png",
+            img: "KamikazeKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3220,7 +3219,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Matsukaze (Retrofit)",
-            img: "matsukazekai.png",
+            img: "MatsukazeKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3230,7 +3229,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Nachi (Retrofit)",
-            img: "nachikai.png",
+            img: "NachiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3240,7 +3239,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Sendai (Retrofit)",
-            img: "sendaikai.png",
+            img: "SendaiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3250,7 +3249,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Shiratsuyu (Retrofit)",
-            img: "shiratsuyukai.png",
+            img: "ShiratsuyuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3260,7 +3259,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Shouhou (Retrofit)",
-            img: "shouhoukai.png",
+            img: "ShouhouKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3270,7 +3269,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Tanikaze (Retrofit)",
-            img: "tanikazekai.png",
+            img: "TanikazeKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3280,7 +3279,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Yamashiro (Retrofit)",
-            img: "yamashirokai.png",
+            img: "YamashiroKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3290,7 +3289,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Yuugure (Retrofit)",
-            img: "yuugurekai.png",
+            img: "YuugureKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3300,7 +3299,7 @@ dataSet[dataSetVersion].characterData = [
         },
             {
             name: "Abukuma (Retrofit)",
-            img: "abukumakai.png",
+            img: "AbukumaKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -3310,7 +3309,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Furutaka (Retrofit)",
-            img: "furutakakai.png",
+            img: "FurutakaKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -3320,7 +3319,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kako (Retrofit)",
-            img: "kakokai.png",
+            img: "KakoKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -3330,7 +3329,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Kisaragi (Retrofit)",
-            img: "kisaragikai.png",
+            img: "KisaragiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -3340,7 +3339,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Mutsuki (Retrofit)",
-            img: "mutsukikai.png",
+            img: "MutsukiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -3350,7 +3349,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Shiranui (Retrofit)",
-            img: "shiranuikai.png",
+            img: "ShiranuiKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["rare"],
@@ -4746,7 +4745,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Admiral Hipper (Retrofit)",
-        img: "admiral_hipperkai.png",
+        img: "Admiral_HipperKai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["super_rare"],
@@ -4756,7 +4755,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Z1 (Retrofit)",
-        img: "z1kai.png",
+        img: "Z1Kai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["super_rare"],
@@ -4766,7 +4765,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Z23 (Retrofit)",
-        img: "z23kai.png",
+        img: "Z23Kai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["super_rare"],
@@ -4776,7 +4775,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Leipzig (Retrofit)",
-        img: "leipzigkai.png",
+        img: "LeipzigKai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["elite"],
@@ -4786,7 +4785,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Karlsruhe (Retrofit)",
-        img: "karlsruhekai.png",
+        img: "KarlsruheKai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["rare"],
@@ -4796,7 +4795,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Köln",
-        img: "kölnkai.png",
+        img: "KölnKai.png",
         opts: {
             faction: ["iron_blood"],
             rarity: ["rare"],
@@ -5620,7 +5619,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "An Shan (Retrofit)",
-        img: "an_shankai.png",
+        img: "An_ShanKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5630,7 +5629,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Chang Chun (Retrofit)",
-        img: "chang_chunkai.png",
+        img: "Chang_ChunKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5640,7 +5639,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Chao Ho (Retrofit)",
-        img: "chao_hokai.png",
+        img: "Chao_HoKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5650,7 +5649,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Chen Hai (Retrofit)",
-        img: "chen_haikai.png",
+        img: "Chen_HaiKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5660,7 +5659,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Fu Shun (Retrofit)",
-        img: "fu_shunkai.png",
+        img: "Fu_ShunKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5670,7 +5669,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Hwah Jah (Retrofit)",
-        img: "hwah_jahkai.png",
+        img: "Hwah_JahKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5680,7 +5679,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Ning Hai (Retrofit)",
-        img: "ning_haikai.png",
+        img: "Ning_HaiKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5690,7 +5689,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Ping Hai (Retrofit)",
-        img: "ping_haikai.png",
+        img: "Ping_HaiKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5700,7 +5699,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Tai Yuan (Retrofit)",
-        img: "tai_yuankai.png",
+        img: "Tai_YuanKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5710,7 +5709,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Yat Sen (Retrofit)",
-        img: "yat_senkai.png",
+        img: "Yat_SenKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5720,7 +5719,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Ying Swei (Retrofit)",
-        img: "ying_sweikai.png",
+        img: "Ying_SweiKai.png",
         opts: {
             faction: ["dragon_empery"],
             rarity: ["super_rare"],
@@ -5962,7 +5961,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Pamiat' Merkuria (Retrofit)",
-        img: "pamiat'_merkuriakai.png",
+        img: "Pamiat'_MerkuriaKai.png",
         opts: {
             faction: ["northern_parliament"],
             rarity: ["super_rare"],
@@ -6303,7 +6302,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Émile Bertin (Retrofit)",
-        img: "émile_bertinkai.png",
+        img: "Émile_BertinKai.png",
         opts: {
             faction: ["iris_libre"],
             rarity: ["super_rare"],
@@ -6313,7 +6312,7 @@ dataSet[dataSetVersion].characterData = [
     }, 
     {
         name: "Forbin (Retrofit)",
-        img: "forbinkai.png",
+        img: "ForbinKai.png",
         opts: {
             faction: ["iris_libre"],
             rarity: ["elite"],
@@ -6599,7 +6598,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Le Mars (Retrofit)",
-        img: "le_marskai.png",
+        img: "Le_MarsKai.png",
         opts: {
             faction: ["vichya_dominion"],
             rarity: ["elite"],
@@ -8027,7 +8026,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Arbiter: The Empress III",
-        img: "arbiter_the_empress_iii.png",
+        img: "Arbiter_The_Empress_III.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8037,7 +8036,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Lovers VI",
-        img: "arbiter_the_lovers_vi.png",
+        img: "Arbiter_The_Lovers_VI.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8047,7 +8046,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: Strength VIII",
-        img: "arbiter_strength_viii.png",
+        img: "Arbiter_Strength_VIII.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8057,7 +8056,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: Temperance XIV",
-        img: "arbiter_temperance_xiv.png",
+        img: "Arbiter_Temperance_XIV.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8067,7 +8066,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Hermit IX",
-        img: "arbiter_the_hermit_ix.png",
+        img: "Arbiter_The_Hermit_IX.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8077,7 +8076,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Devil XV",
-        img: "arbiter_the_devil_xv.png",
+        img: "Arbiter_The_Devil_XV.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8087,7 +8086,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Tower XVI",
-        img: "arbiter_the_tower_xvi.png",
+        img: "Arbiter_The_Tower_XVI.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8097,7 +8096,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Hierophant V",
-        img: "arbiter_the_hierophant_v.png",
+        img: "Arbiter_The_Hierophant_V.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8107,7 +8106,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: Death XIII (Miss D)",
-        img: "arbiter_death_xiii_(miss_d).png",
+        img: "Arbiter_Death_XIII_(Miss_D).png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8117,7 +8116,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Moon XVIII",
-        img: "arbiter_the_moon_xviii.png",
+        img: "Arbiter_The_Moon_XVIII.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8127,7 +8126,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Magician I",
-        img: "arbiter_the_magician_i.png",
+        img: "Arbiter_The_Magician_I.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8137,7 +8136,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Chariot VII",
-        img: "arbiter_the_chariot_vii.png",
+        img: "Arbiter_The_Chariot_VII.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8147,7 +8146,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Star XVII",
-        img: "arbiter_the_star_xvii.png",
+        img: "Arbiter_The_Star_XVII.png",
         opts: {
             faction: ["siren"],
             type: ["unkown"],
@@ -8157,7 +8156,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Arbiter: The Emperor IV",
-        img: "arbiter_the_emperor_iv.png",
+        img: "Arbiter_The_Emperor_IV.png",
         opts: {
             faction: ["siren"],
             type: ["unknown"],
@@ -8170,7 +8169,7 @@ dataSet[dataSetVersion].characterData = [
 
     {
         name: "Enforcer III: Harvest",
-        img: "enforcer_iii_harvestchibi.png",
+        img: "Enforcer_iii_HarvestChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8182,7 +8181,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer VIII: Determination",
-        img: "enforcer_viii_determinationchibi.png",
+        img: "Enforcer_VIII_DeterminationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8194,7 +8193,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer IX: Exploration",
-        img: "enforcer_ix_explorationchibi.png",
+        img: "Enforcer_IX_ExplorationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8206,7 +8205,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer IX: Concealment",
-        img: "enforcer_ix_concealmentchibi.png",
+        img: "Enforcer_IX_ConcealmentChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8218,7 +8217,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer XIV: Equilibrium",
-        img: "enforcer_xiv_equilibriumchibi.png",
+        img: "Enforcer_XIV_EquilibriumChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8230,7 +8229,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer XIV: Harmony",
-        img: "enforcer_xiv_harmonychibi.png",
+        img: "Enforcer_XIV_Harmonychibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8242,7 +8241,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer VI: Attraction",
-        img: "enforcer_vi_attractionchibi.png",
+        img: "Enforcer_VI_AttractionChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8254,7 +8253,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer VI: Combination",
-        img: "enforcer_vi_combinationchibi.png",
+        img: "Enforcer_VI_CombinationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8266,7 +8265,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer XV: Restriction",
-        img: "enforcer_xv_restrictionchibi.png",
+        img: "Enforcer_XV_RestrictionChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8278,7 +8277,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer XV: Temptation",
-        img: "enforcer_xv_temptationchibi.png",
+        img: "Enforcer_XV_TemptationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8290,7 +8289,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer V: Regulation",
-        img: "enforcer_v_regulationchibi.png",
+        img: "Enforcer_V_RegulationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8302,7 +8301,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer V: Orthodoxy",
-        img: "enforcer_v_orthodoxychibi.png",
+        img: "Enforcer_V_OrthodoxyChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8314,7 +8313,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer VII: Victory",
-        img: "enforcer_vii_victorychibi.png",
+        img: "Enforcer_VII_VictoryChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],
@@ -8326,7 +8325,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
         name: "Enforcer VII: Pulverization",
-        img: "enforcer_vii_pulverizationchibi.png",
+        img: "Enforcer_VII_PulverizationChibi.png",
         opts: {
             faction: ["siren"],
             rarity: [""],

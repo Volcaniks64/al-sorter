@@ -3239,7 +3239,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Ise (Retrofit)",
-            img: "Isekai.png",
+            img: "IseKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3249,7 +3249,7 @@ dataSet[dataSetVersion].characterData = [
         },
     {
             name: "Isuzu (Retrofit)",
-            img: "Isuzukai.png",
+            img: "IsuzuKai.png",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["elite"],
@@ -3609,7 +3609,7 @@ dataSet[dataSetVersion].characterData = [
             }
         },
     {
-            name: "Choukai",
+            name: "ChouKai",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],

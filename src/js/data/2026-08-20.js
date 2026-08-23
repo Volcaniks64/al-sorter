@@ -3609,7 +3609,7 @@ dataSet[dataSetVersion].characterData = [
             }
         },
     {
-            name: "ChouKai",
+            name: "Choukai",
             opts: {
                 faction: ["sakura_empire"],
                 rarity: ["super_rare"],

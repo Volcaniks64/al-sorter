@@ -11,7 +11,7 @@ dataSet[dataSetVersion].options = [
         sub: [
             { name: "Include Smol", tooltip: "Include Smol versions of ships such as Amagi-chan", key: "smol" },
             { name: "Include Unreleased", tooltip: "Includes currently unreleased ships such as Enterprise META and Takao META", key: "unreleased" },
-            { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if you exclude the Siren faction", key: "chibionly" },
+            { name: "Include Chibi only", tooltip: "Includes Enforcers, which only have a chibi model. Note that this does nothing if you exclude the Siren faction", key: "chibionly", checked: false },
             { name: "Include Muse", tooltip: "Include Muse versions of ships", key: "muse", checked: false },
             { name: "Include Original", tooltip: "Include original versions of ships that have received a retrofit or an alt. For ships that have both an alt and a retrofit, the original and retrofit will both be included", key: "original", checked: false}
         ]
@@ -21,7 +21,7 @@ dataSet[dataSetVersion].options = [
         name: "Filter by Faction",
         key: "faction",
         tooltip: "Choose which factions to include.",
-        checked: false,
+        checked: true,
         sub: [
             { name: "Eagle Union", key: "eagle_union" },
             { name: "Royal Navy", key: "royal_navy" },
@@ -38,8 +38,8 @@ dataSet[dataSetVersion].options = [
             { name: "Tempesta", key: "tempesta" },
             { name: "Universal", key: "universal" },
             { name: "Collaboration", key: "collaboration" },
-            { name: "Siren", key: "siren" },
-            { name: "Human", key: "human" }
+            { name: "Siren", tooltip: "Includes Sirens like Omitter, Compiler etc. as well as Siren adjacent characters such as TB and Navi. Be aware that adding this option will include spoilers for the story", key: "siren" },
+            { name: "Human", tooltip: "Includes humans. Be aware that adding this option will include spoilers for the story", key: "human", checked: false }
         ]
     },
 

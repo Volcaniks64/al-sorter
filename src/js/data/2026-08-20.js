@@ -38,7 +38,7 @@ dataSet[dataSetVersion].options = [
             { name: "Tempesta", key: "tempesta" },
             { name: "Universal", key: "universal" },
             { name: "Collaboration", key: "collaboration" },
-            { name: "Siren", tooltip: "Includes Sirens like Omitter, Compiler etc. as well as Siren adjacent characters such as TB and Navi. Be aware that adding this option will include spoilers for the story", key: "siren" },
+            { name: "Siren", tooltip: "Includes Sirens like Omitter, Compiler etc. as well as Siren adjacent characters such as TB and Navi. Be aware that adding this option will include spoilers for the story", key: "siren", checked: false },
             { name: "Human", tooltip: "Includes humans. Be aware that adding this option will include spoilers for the story", key: "human", checked: false }
         ]
     },
